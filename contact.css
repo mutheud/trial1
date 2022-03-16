@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+
+}
+h2{
+    font-family: 'Pacifico',cursive;
+    font-weight: 400;
+    font-size: 30px;
+    padding-bottom:  20px;
+}
+p{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Lato',cursive;
+}
+.btn-lg{
+    background-color: #2991b7 ;
+    color: white;
+}
+ul {
+    width: 20%;
+    margin: auto;
+}

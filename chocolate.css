@@ -1,0 +1,156 @@
+ul {
+    width: 20%;
+    margin: auto;
+}
+.cake-body {
+    background-color: rgba(229,229,229, 1);
+    height: 80vh;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato';
+  
+    padding: 50px;
+  }
+  
+  /* ===== FOR cake ===== */
+  .cake {
+    height: 500px; 
+    width: 1200px;
+    margin: 0 auto;  
+    -webkit-box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
+    -moz-box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
+    box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+  
+  }
+  
+  .cake-description {
+    flex: 0 0 25%;
+    padding-right: 30px;
+  }
+  
+  .cake-description__title {
+    font-family: cursive;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 17px;
+    font-family: 'Pacifico';
+    font-style: italic;
+  }
+  
+  
+  /* ====== MAIN CODE ===== */
+.chocolate {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+  .chocolate__div {
+    flex: 0 0 33.3333333%;
+    position: relative;
+  }
+  
+  .responsive-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .chocolate-info {
+    background-color: rgba(0,0,0, 0.3);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+  
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    transition: all 0.4s;
+  }
+  
+  .chocolate-info__link:link,
+  .chocolate-info__link:visited {
+    font-family: 'Lato', cursive;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1.8px;
+    margin: 0;
+    text-decoration: none;
+  
+    transition: all 0.4s;
+  }
+  
+  .chocolate__div:hover .chocolate-info {
+    height: 100%;
+    background-color: rgba(0,0,0, 0.6);
+  }
+  
+  
+  
+  @media only screen and (max-width: 1200px) {
+    body {
+        flex-wrap: wrap;
+    }
+  
+    .cake-description { 
+        padding: 0;
+        flex: 0 0 100%;
+        text-align: center;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .cake-description  {
+        margin-bottom: 30px;
+    }
+  
+    .chocolate  {
+        height: 900px;
+        flex-wrap: wrap;
+    }
+  
+    .chocolate__div {
+        flex: 0 0 100%;
+        height: 33.33333%;
+    }
+  
+    .responsive-img img {
+        height: 100%;
+    }
+  
+    .chocolate__div:nth-of-type(2) img {
+        object-position: 50% 70%;
+    }
+  
+    .chocolate-info {
+        height: 20%
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .chocolate__div:nth-of-type(1) img {
+        object-position: 50% 75%;
+    }
+  
+    .chocolate__div:nth-of-type(3) img {
+        object-position: 50% 60%;
+    }    
+  
+    .chocolate-info__title {
+        font-size: 25px;
+    }    
+  }
